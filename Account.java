@@ -1,2 +1,2 @@
-public class Account {
+public abstract class Account implements IRate {
 }

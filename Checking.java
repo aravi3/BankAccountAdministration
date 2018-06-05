@@ -1,2 +1,2 @@
-public class Checking {
+public class Checking extends Account {
 }
