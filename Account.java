@@ -32,6 +32,28 @@ public abstract class Account implements IRate {
     }
 
     // List common methods
+
+    public void deposit(double amount) {
+        balance = balance + amount;
+        System.out.println("Depositing $" + amount);
+        printBalance();
+    }
+
+    public void withdraw(double amount) {
+        balance = balance - amount;
+        System.out.println("Withdrawing $" + amount);
+        printBalance();
+    }
+
+    public void transfer(String toWhere, double amount) {
+        balance = balance - amount;
+        System.out.println("Transferring $" + amount + " to " + toWhere);
+        printBalance();
+    }
+
+    public void printBalance() {
+        System.out.println("Your balance is now: $" + balance);
+    }
     
     public void showInfo() {
         System.out.println(
